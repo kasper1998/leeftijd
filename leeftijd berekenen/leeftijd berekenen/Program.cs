@@ -17,13 +17,4 @@ namespace leeftijd_berekenen
             return welkom;
         }
     }
-    class Input
-    {
-
-    }
-    class Output
-    {
-
-    }
-
 }
