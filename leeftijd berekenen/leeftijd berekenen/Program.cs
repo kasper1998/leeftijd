@@ -6,7 +6,18 @@ namespace leeftijd_berekenen
     {
         static void Main(string[] args)
         {
-          
+            welcom welkom = new welcom();
+            Output output = new Output();
+            Input input = new Input();
+            Hbereken bereken = new Hbereken();
+
+            while (true)
+            {
+                welkom.bericht();
+                output.outputMessage(bereken.berekening(input.readInput()));
+                
+            }
+
         }
     }
 
