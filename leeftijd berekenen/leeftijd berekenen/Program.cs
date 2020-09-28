@@ -9,14 +9,5 @@ namespace leeftijd_berekenen
           
         }
     }
-    
-    class Input
-    {
-
-    }
-    class Output
-    {
-
-    }
 
 }
