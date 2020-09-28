@@ -15,9 +15,9 @@ namespace leeftijd_berekenen
             {
                 welkom.bericht();
                 output.outputMessage(bereken.berekening(input.readInput()));
-                
+                Console.ReadKey();
+                Console.Clear();
             }
-
         }
     }
 
