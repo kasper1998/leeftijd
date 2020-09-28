@@ -6,10 +6,10 @@ namespace leeftijd_berekenen
 {
     class Input
     {
-        public string[] readInput()
+        public DateTime readInput()
         {
             string input = Console.ReadLine();
-            string[] date = input.Split('/');
+            DateTime date = DateTime.Parse(input);
             return date;
         }
     }
