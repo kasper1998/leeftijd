@@ -7,10 +7,19 @@ namespace leeftijd_berekenen
 {
     class Output
     {
-        public void outputMessage(int age)
+        public void outputMessage(int age,int keuze)
         {
             Console.Clear();
-            Console.WriteLine("Uw leeftijd is " + age + " jaar.");
+            switch (keuze)
+            {
+                case 1:
+                    Console.WriteLine("Uw leeftijd is " + age + " jaar.");
+                    break;
+                case 2:
+                    Console.WriteLine("" + age + " dagen voor je volgende varjaardag.");
+
+                    break;
+            }
             Console.WriteLine();
         }
     }
