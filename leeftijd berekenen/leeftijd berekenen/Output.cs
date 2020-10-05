@@ -22,5 +22,13 @@ namespace leeftijd_berekenen
             }
             Console.WriteLine();
         }
+
+        public void birthDayMessage(bool birthday)
+        {
+            if (birthday)
+            {
+                Console.WriteLine("Gelukkige verjaardag!");
+            }
+        }
     }
 }

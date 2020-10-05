@@ -12,15 +12,15 @@ namespace leeftijd_berekenen
             Input input = new Input();
             Hbereken bereken = new Hbereken();
             dberkenen dagenberekenen = new dberkenen();
+            BirthdayChecker birthdayChecker = new BirthdayChecker();
+            DateTime birthday;
 
             while (true)
             {
                 welkom.bericht();
-                string antwoord = Console.ReadLine();
-                if(antwoord == "leefijd") { output.outputMessage(bereken.berekening(input.readInput()),1); }
-                if(antwoord == "dagen") { output.outputMessage(dagenberekenen.berekening(input.readInput()), 2); }
-                
-
+                birthday = input.readInput();
+                output.outputMessage(bereken.berekening(birthday));
+                output.birthDayMessage(birthdayChecker.birthdayCheck(birthday));
                 Console.ReadKey();
                 Console.Clear();
             }
