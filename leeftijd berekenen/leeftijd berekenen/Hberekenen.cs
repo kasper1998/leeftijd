@@ -5,11 +5,11 @@ using System.Text;
 using System.Threading.Tasks;  
 class Hbereken {
 
-public int berekening (DateTime birthday)
-{
-DateTime current = DateTime.Now;
-int age = current.Year - birthday.Year;
-return age;
-}
+    public int berekening (DateTime birthday)
+    {
+        DateTime current = DateTime.Now;
+        int age = (current - birthday).Days / 365;
+        return age;
+    }
 
 }
