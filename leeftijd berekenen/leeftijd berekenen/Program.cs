@@ -10,11 +10,15 @@ namespace leeftijd_berekenen
             Output output = new Output();
             Input input = new Input();
             Hbereken bereken = new Hbereken();
+            BirthdayChecker birthdayChecker = new BirthdayChecker();
+            DateTime birthday;
 
             while (true)
             {
                 welkom.bericht();
-                output.outputMessage(bereken.berekening(input.readInput()));
+                birthday = input.readInput();
+                output.outputMessage(bereken.berekening(birthday));
+                output.birthDayMessage(birthdayChecker.birthdayCheck(birthday));
                 Console.ReadKey();
                 Console.Clear();
             }
