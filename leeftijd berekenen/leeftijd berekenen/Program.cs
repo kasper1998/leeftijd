@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace leeftijd_berekenen
 {
@@ -10,6 +11,7 @@ namespace leeftijd_berekenen
             Output output = new Output();
             Input input = new Input();
             Hbereken bereken = new Hbereken();
+            dberkenen dagenberekenen = new dberkenen();
             BirthdayChecker birthdayChecker = new BirthdayChecker();
             DateTime birthday;
 
