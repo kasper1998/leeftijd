@@ -18,6 +18,7 @@ namespace leeftijd_berekenen
                 welkom.bericht();
                 birthday = input.readInput();
                 int keuze = Convert.ToInt32(Console.ReadLine());
+                output.outputMessage(calculator.keuze(keuze,birthday));
                 Console.ReadKey();
                 Console.Clear();
             }
