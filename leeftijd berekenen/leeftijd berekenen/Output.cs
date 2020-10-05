@@ -13,5 +13,13 @@ namespace leeftijd_berekenen
             Console.WriteLine("Uw leeftijd is " + age + " jaar.");
             Console.WriteLine();
         }
+
+        public void birthDayMessage(bool birthday)
+        {
+            if (birthday)
+            {
+                Console.WriteLine("Gelukkige verjaardag!");
+            }
+        }
     }
 }
