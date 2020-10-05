@@ -10,17 +10,14 @@ namespace leeftijd_berekenen
             welcom welkom = new welcom();
             Output output = new Output();
             Input input = new Input();
-            Hbereken bereken = new Hbereken();
-            dberkenen dagenberekenen = new dberkenen();
-            BirthdayChecker birthdayChecker = new BirthdayChecker();
+            bereken calculator = new bereken();
             DateTime birthday;
 
             while (true)
             {
                 welkom.bericht();
                 birthday = input.readInput();
-                output.outputMessage(bereken.berekening(birthday));
-                output.birthDayMessage(birthdayChecker.birthdayCheck(birthday));
+                int keuze = Convert.ToInt32(Console.ReadLine());
                 Console.ReadKey();
                 Console.Clear();
             }
