@@ -1,0 +1,3 @@
+- Gebruiker kan kiezen welke optie hij/zij wil gebruiken
+- Leeftijdsberekenen houdt rekening met de verjaardag en of deze al gepaseerd is of niet
+- Het programma geeft weer hoeveel dagen resteren tot de verjaardag van de gebruiker
