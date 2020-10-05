@@ -3,7 +3,7 @@ using System.ComponentModel;
 
 class dberkenen
 {
-	public int Dberekening(DateTime birthday)
+	public int berekening(DateTime birthday)
 	{
 		DateTime current = DateTime.Today;
 		DateTime next = new DateTime(birthday.Day, birthday.Month, current.Year);
