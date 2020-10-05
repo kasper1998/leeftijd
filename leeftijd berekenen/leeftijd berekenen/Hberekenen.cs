@@ -8,7 +8,18 @@ class Hbereken {
     public int berekening (DateTime birthday)
     {
         DateTime current = DateTime.Now;
-        int age = (current - birthday).Days / 365;
+        int age = current.Year - birthday.Year;
+        if (current.Month < birthday.Month)
+        {
+            age--;
+        }
+        else
+        {
+            if(current.Month == birthday.Month && current.Day < birthday.Day)
+            {
+                age--;
+            }
+        }
         return age;
     }
 
